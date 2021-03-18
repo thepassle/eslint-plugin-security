@@ -1,0 +1,33 @@
+{
+  "name": "eslint-plugin-security",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs",
+    "lib": "lib",
+    "test": "tests"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "scripts": {
+    "test": "npm run test:node",
+    "test:node": "mocha tests --recursive",
+    "test:single": "mocha tests/lib/rules/aria-attr-valid-value.js --watch"
+  },
+  "keywords": [
+    "eslint",
+    "eslintplugin",
+    "eslint-plugin"
+  ],
+  "peerDependencies": {
+    "eslint": ">= 5"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^7.22.0",
+    "mocha": "^8.3.2"
+  }
+}
